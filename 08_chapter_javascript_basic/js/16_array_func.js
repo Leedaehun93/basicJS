@@ -1,0 +1,59 @@
+// 배열의 자바스크립트 내장함수를 소개
+// ex) .toFixed(자리수) : 소수점 자르기 함수 등(js 내장 함수)
+
+// TODO : 배열 내장함수
+// TODO 1) 두 배열 합치기 함수
+// 사용법 : 배열변수.concat(배열변수2);
+let nums = [1,2,3] // 숫자 배열
+let chars_1 = ["a", "b", "c", "d"];   // 문자 배열
+// 두개 합치기
+let numsChars = nums.concat(chars_1);
+// 결과 출력
+console.log("numsChars", numsChars)
+
+// TODO 2) 배열 내에 구분자를 이용해서 붙이기 함수
+//  사용법 : 배열변수.join(구분문자열)
+let chars_2 = ["a", "b", "c", "d"];   // 문자 배열
+let string_2 = chars_2.join("/");
+// 결과 출력
+console.log("string1", string_2);
+
+// TODO 3) push() : 새로운 값을 원본 배열의 뒤에 추가하는 함수
+// 사용법 : 배열변수.push(값. 값2, ... 값n);
+let nums_3 = [1, 2, 3]; // 원본 배열
+nums_3.push(4,5);    // 1,2,3,4,5
+// 결과 출력 : 원본 조작 함수
+console.log("nums_3", nums_3);
+
+
+// TODO 4) pop() : 마지막 값을 꺼내서 원본 배열에서 제거하는 함수
+// 사용법 : 배열변수.pop(); 마지막 값만 없어짐
+let chars_4 = ["a", "b", "c", "d"]; // 원본 배열
+chars_4.pop();    // a,b,c
+// 결과 출력 : 원본 조작 함수
+console.log("chars_4", chars_4);
+
+// TODO 5) 기타(참고) :
+//  .push(값) (배열의 마지막에 추가)
+//  .unshift(값) (배열의 앞에 추가)
+//  .pop() (배열의 마지막값을 제거)
+//  .shift() (배열의 처음값을 제거)
+
+
+// TODO 6) 배열의 수정
+let nums_6 = [1,2,3,4,5]; // 숫자 배열
+// 배열의 1st 값 수정 : 0
+nums_6[0] = 10;   // 값 수정( 1 -> 10)
+// 배열의 2nd 값 수정 : 1
+nums_6[1] = 20;   // 수정( 2 -> 20)
+// 결과 출력
+console.log("nums_6", nums_6);
+
+// TODO 7) 배열의 복사
+// 사용법: 배열변수.slice(복사할_시작인덱스번호, 복사할_끝인덱스번호);
+//       [복사할시작인덱스번호 ~ 복사할_끝인덱스번호-1 까지 복사됨]
+let colors_7 = ["red", "green", "blue", "white", "black"];
+
+let colors_7_2 = colors_7.slice(2,4)  // (인덱스번호) 2 ~ 3 까지 복사됨
+// 결과 확인
+console.log("colors_7_2", colors_7_2);
